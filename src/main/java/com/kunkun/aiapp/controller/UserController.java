@@ -27,6 +27,7 @@ import java.util.List;
 
 import static com.kunkun.aiapp.service.impl.UserServiceImpl.SALT;
 
+@CrossOrigin(value = "http://localhost:8080", allowCredentials = "true")
 @RestController
 @RequestMapping("/user")
 @Slf4j
@@ -39,7 +40,6 @@ public class UserController {
 
     /**
      * 用户注册
-     *
      * @param userRegisterRequest
      * @return
      */
@@ -60,7 +60,6 @@ public class UserController {
 
     /**
      * 用户登录
-     *
      * @param userLoginRequest
      * @param request
      * @return
